@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Thomas Flood Personal Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <style>
       
       body {
@@ -13,7 +13,12 @@
               padding: 0px;
               color: #666;
               background: #888;
+              font-family: 'Crimson Text', serif;
             }
+      
+      header {
+             height: 80px;
+      }
         
       main {
               width: 800px;
@@ -39,17 +44,18 @@
         
       .headerNavigation {
             float: right;
+            align-items: center;
         }    
       
       .intro {
-        height: 250px;
-        background-color:yellow;
+        height: 400px;
+        background-color:white;
       }
       
       
       .projects {
-        height: 500px;
-        background-color: green;
+        height: 800px;
+        background-color:#889;
       }
       
       #logo {
@@ -58,12 +64,22 @@
         padding: 5px 0px 0px 5px;
       }
       
+      #introText{
+        float: right;
+        padding: 150px 50px 0px 0px;
+      }
+      
+      #introImage{
+        margin: 0px 0px 0px 50px;
+        padding: 140px 0px 0px 0px;
+        float: left;
+      }
+      
       
     </style>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
     
   </head>
   
@@ -88,7 +104,18 @@
       </header>
 
       <main>
-        <div class="intro"></div>
+        <div class="intro">
+          <div id="introImage">
+          <img src="http://68.media.tumblr.com/tumblr_m4uvclDv711qg7x6ho1_1280.jpg" alt="no image found" height="200px" width="301">
+          </div>
+          <div id="introText">
+          <h2>Thomas Flood</h2>
+          <h3>Computer Science Graduate</h3>
+          <p>Experienced in Customer Care, Business and Team Management<br> with a passion for Technology.</p>  
+          </div>
+        </div>
+        
+        
         <div class="projects"></div>
         <div class="contact"></div>
       </main>
